@@ -10,10 +10,7 @@ package com.bluepowermod.part;
 import com.bluepowermod.api.misc.MinecraftColor;
 import com.bluepowermod.api.wire.redstone.RedwireType;
 import com.bluepowermod.item.ItemPart;
-import com.bluepowermod.part.gate.analogue.GateComparator;
-import com.bluepowermod.part.gate.analogue.GateInverter;
-import com.bluepowermod.part.gate.analogue.GateLightCell;
-import com.bluepowermod.part.gate.analogue.GateRegulableTorch;
+import com.bluepowermod.part.gate.analogue.*;
 import com.bluepowermod.part.gate.digital.*;
 import com.bluepowermod.part.gate.ic.GateIntegratedCircuit;
 import com.bluepowermod.part.gate.supported.GateNullCell;
@@ -120,6 +117,8 @@ public class PartManager {
         registerPart(GateRepeater.class);
         registerPart(GateTransparentLatch.class);
         registerPart(GateSynchronizer.class);
+
+        registerPart(GateMultiplication.class);
 
         // Analogue gates
         registerPart(GateInverter.class);
